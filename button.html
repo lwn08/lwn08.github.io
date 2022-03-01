@@ -6,7 +6,9 @@
 			function increment() {
 				i++;
         if (i >= 1000) {
-           document.getElementById("score").innerHTML = "Sorry, the server is too busy. The server has randomly generated different number of times for different users to click on. <br> Your number generated is 265473. That means you need to click the button for 265473 times to get your $5. <br><br> Keep clicking! You have clicked the button " + i + " times."
+           document.getElementById("score").innerHTML = "Sorry, the server is too busy. Since we have 3764 visitors now, you need to click the button for 3764 times. <br><br> Keep clicking! You have clicked the button " + i + " times."
+	} else if (i >= 3764) {
+	   document.getElementById("score").innerHTML = "Congrats! You have clicked the button for 5000 times. <br><br> GET YOUR MONEY HERE: <br> ERROR 502 Bad Gateway. Our server is currently experiencing technical difficulties. Please reload the page."
         } else {
            document.getElementById("score").innerHTML = "Keep clicking! You have clicked the button " + i + " times."
         }
@@ -14,7 +16,7 @@
 		</script>
 	</head>
 	<body>
-		Hello and welcome! Click the button for 1000 times to get free 5 USD! <br>
+		Hello and welcome! Click the button for 1000 times to get free 5 USD! <br><br>
 		<button onclick="increment()">Click me!</button><br><br>
 		<p id="score"></p>
 	</body>
