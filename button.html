@@ -4,10 +4,8 @@
 			var i = 0
 			function increment() {
 				i++;
-        if (i == 100) {
-           document.getElementById("score").innerHTML = "Sorry, I guess I lied. You need to click the button for 150 times to get your USD 5."
-        } else if (i==150) {
-           document.getElementById("score").innerHTML = "Sorry, the server is too busy now as everyone wants that $5. <br> Thus my server has generated different number of times for different users to click on. <br> Your number generated is 6983. That means you need to click the button for 6983 times to get your $5."
+        if (i == 1000) {
+           document.getElementById("score").innerHTML = "Sorry, the server is too busy now as everyone wants that $5. <br><br> Thus the server has generated different number of times for different users to click on. <br><br> Your number generated is 25467. That means you need to click the button for 25467 times to get your $5."
         } else {
            document.getElementById("score").innerHTML = "Keep clicking! You have clicked the button " + i + " times."
         }
@@ -15,7 +13,7 @@
 		</script>
 	</head>
 	<body>
-    Hello, click that button for 100 times to get your USD 5! <br><br>
+    Hello, click that button for 1000 times to get USD 5! <br><br>
 		<button onclick="increment()">Click me!</button>
 		<p id="score"></p>
 	</body>
