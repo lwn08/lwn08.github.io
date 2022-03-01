@@ -1,0 +1,23 @@
+<html lang="en">
+	<head>
+		<script>
+			var i = 0
+			function increment() {
+				i++;
+				document.getElementById("score").innerHTML = "You have clicked the button " + i + " times."
+        if (i == 100) {
+           document.getElementById("score").innerHTML = "Sorry, I guess I lied. You need to click the button for 500 times to get your USD 5."
+        } else if (i==500) {
+           document.getElementById("score").innerHTML = "Sorry, my server have randomly chosen a lucky number, you need to click the button for the times of that lucky number instead if you want to get your USD 5."
+        } else {
+           document.getElementById("score").innerHTML = "Sorry, keep trying to get your USD 5."
+        }
+			}
+		</script>
+	</head>
+	<body>
+    Hello, click that button for 100 times to get USD 5!
+		<button onclick="increment()">Click me!</button>
+		<p id="score"></p>
+	</body>
+</html>
