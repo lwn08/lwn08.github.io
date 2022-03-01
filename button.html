@@ -5,7 +5,7 @@
 			console.log(" Please don't add javascript to the console that auto-clicks the button. It won't be counted.");
 			function increment() {
 				i++;
-        if (i >= 1000) {
+        if (i >= 1000 && i <= 3763) {
            document.getElementById("score").innerHTML = "Sorry, the server is too busy. Since we have 3764 visitors now, you need to click the button for 3764 times. <br><br> Keep clicking! You have clicked the button " + i + " times."
 	} else if (i >= 3764) {
 	   document.getElementById("score").innerHTML = "Congrats! You have clicked the button for 5000 times. <br><br> GET YOUR MONEY HERE: <br> ERROR 502 Bad Gateway. Our server is currently experiencing technical difficulties. Please reload the page."
